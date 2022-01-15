@@ -10,6 +10,6 @@ export default function getCities(): Promise<any> {
       return responseJson.cities;
     })
     .catch((error) => {
-      console.error(error);
+      throw new Error(error);
     });
 }

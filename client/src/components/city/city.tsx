@@ -32,7 +32,8 @@ const City: React.FC<{ city: ICity; visibility: boolean }> = ({
           <span>{city.population.toLocaleString()}</span>
         </div>
         <h3>
-          {city.name}, <span>{city.country}</span>
+          <span data-testid='city-name'>{city.name}</span>,{' '}
+          <span className='country'>{city.country}</span>
         </h3>
         <p>
           <span>landmarks:</span> {city.landmarks.join(', ')}
