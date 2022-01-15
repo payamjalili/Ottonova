@@ -1,0 +1,54 @@
+.loading-container {
+  text-align: center;
+  color: #05b;
+}
+
+.text-empty {
+  text-align: center;
+  color: #05b;
+  font-size: 12px;
+}
+
+#filters {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+#filters::after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+#filters li {
+  float: left;
+  list-style: none;
+  cursor: pointer;
+  color: #05b;
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 0 5px 5px 0;
+
+  -webkit-transition: background-color 400ms ease-out, color 400ms ease-out;
+  -moz-transition: background-color 400ms ease-out, color 400ms ease-out;
+  -o-transition: background-color 400ms ease-out, color 400ms ease-out;
+  transition: background-color 400ms ease-out, color 400ms ease-out;
+}
+
+#filters li:hover,
+#filters li.active {
+  background-color: #05b;
+  color: #fff;
+}
+
+#tree {
+  padding: 15px;
+}
+
+#tree::after {
+  content: ' ';
+  display: block;
+  clear: both;
+}

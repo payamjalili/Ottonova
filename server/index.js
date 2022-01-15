@@ -1,5 +1,8 @@
 const express = require('express');
+var cors = require('cors');
 const app = express();
+
+app.use(cors());
 
 // Defining get request at '/multiple' route
 app.get('/cities', function (req, res) {
@@ -12,8 +15,8 @@ app.get('/cities', function (req, res) {
         continent: 'Australia',
         latitude: '-33.865143',
         longitude: '151.209900',
-        population: '5312000',
-        founded: '1788',
+        population: 5312000,
+        founded: 1788,
         landmarks: [
           'Sydney Opera House',
           'Sydney Harbour Bridge',
@@ -27,8 +30,8 @@ app.get('/cities', function (req, res) {
         continent: 'North America',
         latitude: '40.730610',
         longitude: '-73.935242',
-        population: '8419000',
-        founded: '1624',
+        population: 8419000,
+        founded: 1624,
         landmarks: [
           'Chrysler Building',
           'Brooklyn Bridge',
@@ -42,8 +45,8 @@ app.get('/cities', function (req, res) {
         continent: 'Europe',
         latitude: '40.416775',
         longitude: '-3.703790',
-        population: '3223000',
-        founded: '1083',
+        population: 3223000,
+        founded: 1083,
         landmarks: ['Royal Palace', 'Plaza Mayor', 'Plaza de Cibeles'],
       },
       {
@@ -53,8 +56,8 @@ app.get('/cities', function (req, res) {
         continent: 'Europe',
         latitude: '55.751244',
         longitude: '37.618423',
-        population: '11920000',
-        founded: '1147',
+        population: 11920000,
+        founded: 1147,
         landmarks: ["Saint Basil's Cathedral", 'Kremlin', 'Bolshoi Theatre'],
       },
       {
@@ -64,8 +67,8 @@ app.get('/cities', function (req, res) {
         continent: 'Asia',
         latitude: '35.652832',
         longitude: '139.839478',
-        population: '13960000',
-        founded: '1603',
+        population: 13960000,
+        founded: 1603,
         landmarks: ['Meji Shrine', 'Asakusa', 'Tokyo Skytree'],
       },
       {
@@ -75,8 +78,8 @@ app.get('/cities', function (req, res) {
         continent: 'Africa',
         latitude: '6.465422',
         longitude: '3.406448',
-        population: '14800000',
-        founded: '1914',
+        population: 14800000,
+        founded: 1914,
         landmarks: [
           'Iga Idungaran',
           'Freedom Park',
@@ -90,8 +93,8 @@ app.get('/cities', function (req, res) {
         continent: 'South America',
         latitude: '-23.533773',
         longitude: '-46.625290',
-        population: '12330000',
-        founded: '1554',
+        population: 12330000,
+        founded: 1554,
         landmarks: [
           'Mosteiro De Sao Bento',
           'Italian Building',
@@ -105,15 +108,15 @@ app.get('/cities', function (req, res) {
         continent: 'Europe',
         latitude: '48.137154',
         longitude: '11.576124',
-        population: '1472000',
-        founded: '1158',
+        population: 1472000,
+        founded: 1158,
         landmarks: ['Bavaria statue', 'Marienplatz', 'ottonova office'],
       },
     ],
   });
 });
 
-// Setting the server to listen at port 3000
-app.listen(3000, function (req, res) {
-  console.log('Server is running at port 3000');
+// Setting the server to listen at port 5000
+app.listen(5000, function (req, res) {
+  console.log('Server is running at port 5000');
 });
